@@ -25,6 +25,7 @@ h1 {
 
 p {
     display: flex;
+    gap: 5px;
     margin: 5px ;
     font-weight: 700;
     font-size: 16px;
@@ -59,28 +60,35 @@ input {
 .button:hover {
     background-color: hsl(4, 100%, 67%);
     border: none;
+    transition: 0.3s;
 }
 
-.imagem {
+.imagem-padrao {
    padding: 20px;
 }
 
 @media (max-width: 927px) {
     body {
-        background-color: white;
+        margin: 0;
     }
     
     .container {
         display: flex;
         flex-direction: column;
-        background-color: aqua;
+        border-radius: 0;
     }
 
     p {
-        padding: 5px
+        padding: 5px;
+        gap: 5px;
     }
 
-    .imagem {
+    .imagem-padrao {
+        content: url(images/illustration-sign-up-mobile.svg);
         order: -1;
+        width: 100%;
+        padding: 0;
       }
+
+
 }
