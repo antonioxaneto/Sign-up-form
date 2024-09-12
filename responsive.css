@@ -1,0 +1,27 @@
+@media (max-width: 927px) {
+    body {
+        margin: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    p {
+        padding: 5px;
+        gap: 8px;
+    }
+
+    input {
+        height: 45px;
+    }
+
+    .imagem-padrao {
+        content: url(images/illustration-sign-up-mobile.svg);
+        order: -1;
+        width: 100%;
+        padding: 0;
+      }
+}

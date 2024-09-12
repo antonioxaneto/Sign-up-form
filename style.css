@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: hsl(234, 29%, 20%);
+    background-color: hsl(235, 18%, 26%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,6 @@ body {
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    color: hsl(235, 18%, 26%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,20 +20,23 @@ body {
 h1 {
     font-size: 50px;
     padding-bottom: 50px;
+    color: hsl(234, 29%, 20%);
 }
 
 p {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     margin: 5px ;
     font-weight: 700;
     font-size: 16px;
 }
 
-h4 {
-    padding-bottom: 5px;
+label {
+    padding-bottom: 8px;
     padding-top: 20px;
     font-size: 13px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
 }
 .conteudo {
     display: flex;
@@ -67,28 +69,32 @@ input {
    padding: 20px;
 }
 
-@media (max-width: 927px) {
-    body {
-        margin: 0;
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        border-radius: 0;
-    }
 
-    p {
-        padding: 5px;
-        gap: 5px;
-    }
-
-    .imagem-padrao {
-        content: url(images/illustration-sign-up-mobile.svg);
-        order: -1;
-        width: 100%;
-        padding: 0;
-      }
-
-
+.form-control {
+    position: relative;
 }
+
+.error {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsl(4, 69%, 91%);
+  }
+ 
+.error::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+
+.error-message {
+    color: hsl(4, 100%, 67%);
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+  }
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
