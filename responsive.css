@@ -24,4 +24,32 @@
         width: 100%;
         padding: 0;
       }
+      
+      .modal {
+        box-shadow: none;
+        
+      }
+
+      #close-modal {
+        width: 400px;
+        margin: 60px;
+      }
+      
+      .modal h2 {
+        font-size: 45px;
+        margin-left: 55px;
+      }
+
+      .modal p {
+        margin-left: 65px;
+        margin-right: 50px;
+      }
+
+      .modal img {
+        margin-left: 65px;
+      }
+
+      .modal-overlay {
+        background-color: white;  
+    }
 }
